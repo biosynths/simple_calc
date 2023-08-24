@@ -2,6 +2,7 @@ import sys
 
 from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QApplication, QMainWindow
+from calc import Ui_MainWindow
 
 
 class Window(QMainWindow):
@@ -29,9 +30,11 @@ class Window(QMainWindow):
         pass
 def application():
     app = QApplication(sys.argv)
-    window = Window()
+    main_window = QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(main_window)
 
-    window.show()
+    main_window.show()
     sys.exit(app.exec_())
 
 
