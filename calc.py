@@ -278,3 +278,4 @@ class Ui_MainWindow(object):
             error.setStandardButtons(QMessageBox.Ok)
             error.exec_()
             self.reset()
+
